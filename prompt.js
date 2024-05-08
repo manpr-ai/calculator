@@ -1,11 +1,10 @@
 import readlineSync from "readline-sync";
 
-// 🦁 Nos fonctions vont utiliser la méthode `prompt`
-// J'utilise une librairie afin que `prompt` soit synchrone pour éviter que tu aies besoin
-// De gérer l’asynchrone dans tes fonctions
+// Définition de la fonction prompt qui prend une question en paramètre
 export function prompt(question) {
-  // readlineSync.question returns the user's input once they hit enter
+  // readlineSync.question retourne la réponse de l'utilisateur une fois qu'il appuie sur Entrée
   const answer = readlineSync.question(question);
 
+  // Retourne la réponse saisie par l'utilisateur
   return answer;
 }
