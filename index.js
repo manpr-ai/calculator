@@ -41,14 +41,14 @@ const promptNumber = (message) => {
   return number;
 };
 const restartCalculator = () => {
-  const choice = prompt("Another calculate ? (O/N) : ");
-  if (choice.toLocaleUpperCase() === "O") {
+  const choice = prompt("Another calculate ? (Y/N) : ");
+  if (choice.toLocaleUpperCase() === "Y") {
     console.log("\n");
     calculator();
   } else if (choice.toLocaleUpperCase() === "N") {
     console.log("Ok! Ciao! 😊");
   } else {
-    console.log("Invalid choice");
+    console.log("Invalid choice, only Y or N");
     restartCalculator();
   }
 };
