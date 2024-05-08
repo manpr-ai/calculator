@@ -40,7 +40,18 @@ const promptNumber = (message) => {
   validateNumber(number);
   return number;
 };
-
+const restartCalculator = () => {
+  const choice = prompt("Another calculate ? (O/N) : ");
+  if (choice.toLocaleUpperCase() === "O") {
+    console.log("\n");
+    calculator();
+  } else if (choice.toLocaleUpperCase() === "N") {
+    console.log("Ok! Ciao! 😊");
+  } else {
+    console.log("Invalid choice");
+    restartCalculator();
+  }
+};
 // Fonction principale du calculateur
 const calculator = () => {
   // Fonction pour calculer le résultat en fonction de l'opérateur et des nombres saisis
@@ -87,6 +98,7 @@ const calculator = () => {
 
   // Calcule et affiche le résultat en fonction de l'opérateur et des nombres saisis
   calculateResult(operator, firstNumber, secondNumber);
+  restartCalculator();
 };
 
 // Appel de la fonction principale pour démarrer le calculateur
