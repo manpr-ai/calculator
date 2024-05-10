@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculette</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="d__flex">
+    <header class="header__container">
+      <h1 class="drop__shadow">Calculette</h1>
+    </header>
+    <main>
+      <div class="d__flex container__game drop__shadow border__radius">
+        <h2 class="padB__10 font__size__h2">Choisissez un opérateur :</h2>
+        <div class="padB__10">
+          <p class="padB__5">1. Addition</p>
+          <p class="padB__5">2. Soustraction</p>
+          <p class="padB__5">3. Multiplication</p>
+          <p class="padB__5">4. Division</p>
+        </div>
+        <div class="container__opérator d__flex">
+          <label for="inputOperator">Entrez votre opérateur :</label>
+          <input
+            class="border__style border__radius"
+            type="text"
+            id="inputOperator"
+          />
+          <p class="padB__10" id="resultOperator"></p>
+        </div>
+        <div class="container__numbers d__flex">
+          <div class="first__number d__flex">
+            <label for="inputFirstNumber">Entrez le premier nombre:</label>
+            <input
+              class="border__style border__radius"
+              type="text"
+              id="inputFirstNumber"
+            />
+          </div>
+          <div class="second__number d__flex">
+            <label for="inputSecondNumber">Entrez le second nombre:</label>
+            <input
+              class="border__style border__radius"
+              type="text"
+              id="inputSecondNumber"
+            />
+          </div>
+          <button class="border__style border__radius" id="calculatorButton">
+            Validez !
+          </button>
+        </div>
+        <p class="padT__15" id="result"></p>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

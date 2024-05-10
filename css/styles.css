@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-background-body: #8390fa;
+  --color-h1: #fac748;
+  --color-font: #1d2f6f;
+  --color-border: #1d2f6f;
+  --color-background-container: #f9e9ec;
+  --color-drop-shadow: #1d2f6f;
+  --color-btn: #fac748;
+  --color-btn-font: #1d2f6f;
+  --color-btn-hover: #1d2f6f;
+  --color-btn-font-hover: #fac748;
+
+  --font-family: "Titan One", sans-serif;
+  --font-family-secondary: "Montserrat", sans-serif;
+}
+
+/* BODY */
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: var(--font-family);
+  background-color: var(--color-background-body);
+}
+
+/* HEADER */
+.header__container {
+  font-size: 37px;
+  padding-bottom: 30px;
+  margin-top: 50px;
+  color: var(--color-h1);
+}
+
+/* CONTAINER MAIN */
+.container__game {
+  justify-content: center;
+  width: 600px;
+  padding: 25px;
+  background-color: var(--color-background-container);
+  color: var(--color-font);
+}
+
+/* INPUT */
+input[type="text"] {
+  width: 75%;
+  margin: 15px 0px;
+  padding: 8px;
+  font-family: var(--font-family);
+  background-color: var(--color-background-container);
+}
+
+/* BOUTON */
+button {
+  padding: 10px 20px;
+  background-color: var(--color-btn);
+  color: var(--color-btn-font);
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--font-family-);
+}
+
+button:hover {
+  background-color: var(--color-btn-hover);
+  color: var(--color-btn-font-hover);
+}
+
+/* PADDING */
+.padB__10 {
+  padding-bottom: 10px;
+}
+.padB__5 {
+  padding-bottom: 5px;
+}
+.padT__15 {
+  padding-top: 15px;
+}
+
+/* BORDER */
+.border__style {
+  border: 1.5px solid var(--color-border);
+}
+.border__radius {
+  border-radius: 15px;
+}
+
+/* FONT */
+.font__size__h2 {
+  font-size: 25px;
+}
+
+/* DROP SHADOX */
+.drop__shadow {
+  filter: drop-shadow(3px 3px 3px var(--color-drop-shadow));
+}
+
+/* LAYOUT */
+.d__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
